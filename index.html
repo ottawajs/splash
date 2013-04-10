@@ -22,7 +22,13 @@
           -webkit-animation-duration:         20s; 
           -webkit-animation-iteration-count:  infinite;
           -webkit-animation-timing-function: ease-in-out;
-          }
+      }
+      img {
+        position:absolute;
+        width:300; 
+        top:10em;
+        left:10em;
+      }
     </style>
 	</head>
 	<body>
@@ -31,13 +37,13 @@
 		uglifyjs p1k.js -o p1k-min.js --lint -m -c
 	-->
     <canvas id="c"></canvas>
-    <img src="OttawaJS.png"  alt="OttawaJS" style="position:absolute; width:300; top:10em;left:10em">
+    <img src="OttawaJS.png"  alt="OttawaJS">
 		<script>
 			var b = document.body;
 			var c = document.getElementsByTagName('canvas')[0];
 			var a = c.getContext('2d');
 			document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
 		</script>
-		<script src="p1k.js"></script>
+		<script src="p1k-min.js"></script>
 	</body>
 </html>
