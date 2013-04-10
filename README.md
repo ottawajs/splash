@@ -1,4 +1,5 @@
 splash
 ======
 
-Just a splash screen for the meetups
+Just a [splash screen](http://ottawajs.org/splash/) for the meetups
+
